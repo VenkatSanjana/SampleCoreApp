@@ -10,32 +10,19 @@ namespace SampleCoreApp_Test
         [TestMethod()]
         public void SucessesTest()
         {
-            try
-            {
                 SampleApp code = new SampleApp();
                 var result = code.Perform(10);
-                Assert.AreEqual("10", result);
-            }
-            catch (Exception ex)
-            {
-
-            }
+                Assert.AreEqual("10", result);           
+            
         }
 
 
         [TestMethod()]
         public void ExceptionTest()
         {
-            try
-            {
                 SampleApp code = new SampleApp();
                 var result = code.Perform(-1);
                 Assert.AreEqual("Error", result);
-            }
-            catch (Exception ex)
-            {
-
-            }
         }
     }
 }

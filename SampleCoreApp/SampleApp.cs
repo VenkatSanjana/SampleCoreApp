@@ -14,7 +14,7 @@ namespace SampleCoreApp
                 for (int i = 0; i < n; i++)
                 {
                     Console.WriteLine("Test Process Loop ---" + i);
-                    result = i.ToString();
+                    result = "5"; // i.ToString();
                 }
             }
             else
